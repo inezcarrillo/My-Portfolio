@@ -1,12 +1,12 @@
-import ReactDOM from 'react-dom/client';
-
+import ReactDOM from 'react-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App';
-import Home from './Home';
-import AboutMe from './Aboutme';
-import Projects from './Projects';
-import Contact from './Contact';
+import Home from './components/Home';
+import AboutMe from './components/Aboutme';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 const router = createBrowserRouter([
     {
@@ -18,15 +18,15 @@ const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                index: true,
+                path: '/About',
                 element: <AboutMe />,
             },
             {
-                index: true,
+                path: '/Projects',
                 element: <Projects />,
             },
             {
-                index: true,
+                path: '/Contact',
                 element: <Contact />,
             },
         ],
