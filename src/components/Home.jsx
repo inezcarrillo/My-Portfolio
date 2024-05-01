@@ -1,10 +1,13 @@
+import image from './image.jpeg';
+
 export default function Home() {
     return (
         <div>
-            <h1>Welcome!</h1>
+            <h1>Hi there!</h1>
             <p>
-                Hey! Welcome to my portfolio
+                Welcome to my portfolio!
             </p>
+            <img src={image} alt="Image" /> {/* Inserting the image */}
         </div>
     )
 }
